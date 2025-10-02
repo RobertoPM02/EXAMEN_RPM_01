@@ -67,5 +67,6 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
     private void regresar() {
         Intent intentMainActivity = new Intent(this, MainActivity.class);
         startActivity(intentMainActivity);
+        finish();
     }
 }

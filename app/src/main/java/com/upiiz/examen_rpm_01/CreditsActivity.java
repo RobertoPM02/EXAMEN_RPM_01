@@ -39,5 +39,6 @@ public class CreditsActivity extends AppCompatActivity implements View.OnClickLi
     private void regresar() {
         Intent intentMainActivity = new Intent(this, MainActivity.class);
         startActivity(intentMainActivity);
+        finish();
     }
 }

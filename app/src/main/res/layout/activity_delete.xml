@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.258" />
 
     <Button
-        android:id="@+id/btnEliminar"
+        android:id="@+id/btnEliminar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/actualizar"
@@ -77,7 +77,7 @@
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
-        android:id="@+id/btnRegresar2"
+        android:id="@+id/btnRegresar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/regresar"
@@ -89,7 +89,7 @@
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
-        android:id="@+id/btnBuscar"
+        android:id="@+id/btnBuscar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buscar"
