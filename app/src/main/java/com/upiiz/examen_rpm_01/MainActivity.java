@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void eliminar() {
+
+        Intent intentDeleteActivity = new Intent(this, DeleteActivity.class);
+        startActivity(intentDeleteActivity);
     }
 
     private void creditos() {
@@ -69,8 +72,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void agregar() {
+
+        Intent intentAddActivity = new Intent(this, AddActivity.class);
+        startActivity(intentAddActivity);
     }
 
     private void actualizar() {
+
+        Intent intentSearchActivity = new Intent(this, SearchActivity.class);
+        startActivity(intentSearchActivity);
     }
 }
