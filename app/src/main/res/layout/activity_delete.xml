@@ -21,12 +21,12 @@
         app:layout_constraintVertical_bias="0.108" />
 
     <EditText
-        android:id="@+id/etNombre"
+        android:id="@+id/etDestino2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="440dp"
         android:ems="10"
-        android:hint="Nombre Viaje"
+        android:hint="@string/destino"
         android:inputType="text"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,48 +37,47 @@
         app:layout_constraintVertical_bias="0.474" />
 
     <EditText
-        android:id="@+id/etEdad"
+        android:id="@+id/etFsalida3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/edad"
-        android:inputType="number"
+        android:hint="@string/fecha_de_salida"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNombre"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintTop_toBottomOf="@+id/etDestino2"
+        app:layout_constraintVertical_bias="0.19" />
 
     <EditText
-        android:id="@+id/etObs"
+        android:id="@+id/etFregreso3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:text=""
-        android:hint="@string/observaciones"
+        android:hint="@string/fecha_de_regreso"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEdad"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintTop_toBottomOf="@+id/etFsalida3"
+        app:layout_constraintVertical_bias="0.258" />
 
     <Button
-        android:id="@+id/btnActualizar2"
+        android:id="@+id/btnEliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/eliminar"
+        android:text="@string/actualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etObs"
+        app:layout_constraintTop_toBottomOf="@+id/etFregreso3"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
-        android:id="@+id/btnRegresar3"
+        android:id="@+id/btnRegresar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/regresar"
@@ -86,14 +85,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etObs"
+        app:layout_constraintTop_toBottomOf="@+id/etFregreso3"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buscar"
+        android:text="@string/buscar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"

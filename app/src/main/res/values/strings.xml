@@ -9,4 +9,8 @@
     <string name="eliminar">Eliminar</string>
     <string name="name">Roberto Pichardo Mier</string>
     <string name="grupo">7CM1</string>
+    <string name="fecha_de_salida">Fecha de salida</string>
+    <string name="fecha_de_regreso">Fecha de Regreso</string>
+    <string name="buscar">Buscar</string>
+    <string name="destino">Destino</string>
 </resources>
