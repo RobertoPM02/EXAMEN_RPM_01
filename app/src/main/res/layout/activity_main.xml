@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.118" />
 
     <Button
-        android:id="@+id/btnActualizar"
+        android:id="@+id/btnActualizar1"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
@@ -33,20 +33,20 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <Button
-        android:id="@+id/btnEliminar"
+        android:id="@+id/btnEliminar1"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
-        android:text="Eiminar"
+        android:text="@string/eiminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualizar1"
         app:layout_constraintVertical_bias="0.059" />
 
     <Button
-        android:id="@+id/btnCreditos"
+        android:id="@+id/btnCreditos1"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Créditos"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEliminar"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminar1"
         app:layout_constraintVertical_bias="0.268" />
 
     <Button
@@ -66,6 +66,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCreditos"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreditos1"
         app:layout_constraintVertical_bias="0.403" />
 </androidx.constraintlayout.widget.ConstraintLayout>
