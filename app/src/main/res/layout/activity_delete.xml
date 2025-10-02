@@ -48,7 +48,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDestino2"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <EditText
         android:id="@+id/etFregreso3"
@@ -62,7 +62,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etFsalida3"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.223" />
 
     <Button
         android:id="@+id/btnEliminar5"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFregreso3"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio2"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFregreso3"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio2"
         app:layout_constraintVertical_bias="0.455" />
 
     <Button
@@ -99,5 +99,19 @@
         app:layout_constraintStart_toEndOf="@+id/tvEliminar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/etPrecio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFregreso3"
+        app:layout_constraintVertical_bias="0.271" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

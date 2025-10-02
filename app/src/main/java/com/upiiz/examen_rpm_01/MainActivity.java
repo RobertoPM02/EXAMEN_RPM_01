@@ -44,13 +44,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        btnAgregar1 = findViewById(R.id.btnAgregar1);
-        btnActualizar1 = findViewById(R.id.btnActualizar1);
-        btnEliminar1 = findViewById(R.id.btnEliminar1);
-        btnCreditos1 = findViewById(R.id.btnCreditos1);
-        btnSalir = findViewById(R.id.btnSalir);
-
-        // Tu lógica original igual
         if (v.getId()==btnEliminar1.getId()){
             eliminar();
         } else if (v.getId()==btnActualizar1.getId()) {

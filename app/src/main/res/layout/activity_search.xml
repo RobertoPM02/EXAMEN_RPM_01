@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDestino2"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <EditText
         android:id="@+id/etFregreso2"
@@ -63,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etFsalida2"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <Button
         android:id="@+id/btnActualizar2"
@@ -72,10 +72,10 @@
         android:text="@string/actualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFregreso2"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio1"
+        app:layout_constraintVertical_bias="0.621" />
 
     <Button
         android:id="@+id/btnRegresar2"
@@ -84,10 +84,10 @@
         android:text="@string/regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFregreso2"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio1"
+        app:layout_constraintVertical_bias="0.619" />
 
     <Button
         android:id="@+id/btnBuscar"
@@ -100,5 +100,19 @@
         app:layout_constraintStart_toEndOf="@+id/tvActualizar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/etPrecio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFregreso2"
+        app:layout_constraintVertical_bias="0.303" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

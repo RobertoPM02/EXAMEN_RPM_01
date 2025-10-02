@@ -1,6 +1,7 @@
 package com.upiiz.examen_rpm_01;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
 
     Button btnAgregar2, btnRegresar1;
 
-    EditText etDestino, etFsalida, etFregreso;
+    EditText etDestino, etFsalida, etFregreso, etPrecio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
         etDestino = findViewById(R.id.etDestino);
         etFsalida = findViewById(R.id.etFsalida);
         etFregreso = findViewById(R.id.etFregreso);
+        etPrecio = findViewById(R.id.etPrecio1);
 
         btnAgregar2.setOnClickListener(this);
         btnRegresar1.setOnClickListener(this);
@@ -53,14 +55,38 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
 
     private void agregar() {
         String destino = etDestino.getText().toString();
-        // Date fecha_salida = etFsalida.getText().insert();
-        // Date fecha_regreso = etFregreso.getText().insert();
+        String fecha_salida = etFsalida.getText().toString();
+        String fecha_regreso = etFregreso.getText().toString();
+        String precioStr = etPrecio.getText().toString();
+
+        if(destino.isEmpty() || precioStr.isEmpty()) {
+            Toast.makeText(this, "Destino y precio son obligatorios", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        try {
+            double precio = Double.parseDouble(precioStr);
 
 
+            SharedPreferences sharedPref = getSharedPreferences("viajes_data", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
 
+            // Guardar los datos (puedes guardar múltiples viajes con claves únicas)
+            String viajeKey = "viaje_" + System.currentTimeMillis(); // Clave única
 
+            editor.putString(viajeKey + "_destino", destino);
+            editor.putString(viajeKey + "_fecha_salida", fecha_salida);
+            editor.putString(viajeKey + "_fecha_regreso", fecha_regreso);
+            editor.putFloat(viajeKey + "_precio", (float) precio);
 
-        Toast.makeText(this, "Viaje guardado", Toast.LENGTH_SHORT).show();
+            editor.apply();
+
+            Toast.makeText(this, "Viaje guardado ", Toast.LENGTH_SHORT).show();
+            finish();
+
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "El precio debe ser un número válido", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
