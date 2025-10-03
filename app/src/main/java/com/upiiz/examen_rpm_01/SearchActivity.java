@@ -23,10 +23,6 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
 
     EditText etDestino, etFsalida, etFregreso, etPrecio;
 
-    String destino, fecha_salida, fecha_regreso;
-
-    float precio;
-
     private String viajeKey = "";
 
     @Override
@@ -112,7 +108,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     private void actualizar() {
 
         if (viajeKey.isEmpty()) {
-            Toast.makeText(this, "Primero busca un viaje para actualizar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Busca un viaje para actualizar", Toast.LENGTH_SHORT).show();
             return;
         }
 

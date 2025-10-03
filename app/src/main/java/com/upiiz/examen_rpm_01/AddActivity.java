@@ -64,29 +64,27 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             return;
         }
 
-        try {
-            double precio = Double.parseDouble(precioStr);
+
+        double precio = Double.parseDouble(precioStr);
 
 
-            SharedPreferences sharedPref = getSharedPreferences("viajes_data", MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPref.edit();
+        SharedPreferences sharedPref = getSharedPreferences("viajes_data", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
 
-            // Guardar los datos (puedes guardar múltiples viajes con claves únicas)
-            String viajeKey = "viaje_" + System.currentTimeMillis(); // Clave única
 
-            editor.putString(viajeKey + "_destino", destino);
-            editor.putString(viajeKey + "_fecha_salida", fecha_salida);
-            editor.putString(viajeKey + "_fecha_regreso", fecha_regreso);
-            editor.putFloat(viajeKey + "_precio", (float) precio);
+        String viajeKey = "viaje_" + System.currentTimeMillis();
 
-            editor.apply();
+        editor.putString(viajeKey + "_destino", destino);
+        editor.putString(viajeKey + "_fecha_salida", fecha_salida);
+        editor.putString(viajeKey + "_fecha_regreso", fecha_regreso);
+        editor.putFloat(viajeKey + "_precio", (float) precio);
 
-            Toast.makeText(this, "Viaje guardado ", Toast.LENGTH_SHORT).show();
-            finish();
+        editor.apply();
 
-        } catch (NumberFormatException e) {
-            Toast.makeText(this, "El precio debe ser un número válido", Toast.LENGTH_SHORT).show();
-        }
+        Toast.makeText(this, "Viaje guardado ", Toast.LENGTH_SHORT).show();
+        finish();
+
+
 
     }
 

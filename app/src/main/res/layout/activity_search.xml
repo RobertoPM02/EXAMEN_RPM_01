@@ -69,24 +69,26 @@
         android:id="@+id/btnActualizar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
         android:text="@string/actualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPrecio1"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio2"
         app:layout_constraintVertical_bias="0.621" />
 
     <Button
         android:id="@+id/btnRegresar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
         android:text="@string/regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPrecio1"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio2"
         app:layout_constraintVertical_bias="0.619" />
 
     <Button
