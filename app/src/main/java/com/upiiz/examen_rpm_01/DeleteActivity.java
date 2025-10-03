@@ -96,14 +96,13 @@ public class DeleteActivity extends AppCompatActivity implements View.OnClickLis
 
         for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
             if (entry.getKey().endsWith("_destino") && entry.getValue().equals(destinoBuscado)) {
-                // Encontramos el destino, ahora obtener los demás datos
                 String keyBase = entry.getKey().replace("_destino", "");
 
                 String fechaSalida = sharedPref.getString(keyBase + "_fecha_salida", "");
                 String fechaRegreso = sharedPref.getString(keyBase + "_fecha_regreso", "");
                 float precio = sharedPref.getFloat(keyBase + "_precio", 0);
 
-                // Llenar los campos
+
                 etFsalida.setText(fechaSalida);
                 etFregreso.setText(fechaRegreso);
                 etPrecio.setText(String.valueOf(precio));
